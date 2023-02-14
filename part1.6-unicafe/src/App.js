@@ -8,9 +8,6 @@ const StatisticLine = (props) => {
                 <td>{props.text}</td>
                 <td>{props.value}</td>
             </tr>
-           
-           
-       
     )
 }
 
@@ -18,13 +15,11 @@ const Statistics=(props) =>{
   if(props.total === 0){
     return(
       <tbody>
-    
         <tr>
           <td>
             No Data Info
           </td>
         </tr>
-      
       </tbody>
     )
   }
@@ -53,7 +48,6 @@ const Buttons =(props) => {
 
 
 const App = () => {
-  // save clicks of each button to its own state
   const [good, setGood] = useState(0)
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
