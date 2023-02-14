@@ -3,7 +3,6 @@ import { useState } from 'react'
 
 const StatisticLine = (props) => {
     return(
-    
             <tr>
                 <td>{props.text}</td>
                 <td>{props.value}</td>
@@ -25,7 +24,6 @@ const Statistics=(props) =>{
   }
   return(
       <tbody>
-        
           <StatisticLine text = "good" value ={props.good} />
           <StatisticLine text = "neutral" value ={props.neutral} />
           <StatisticLine text = "bad" value ={props.bad} />
@@ -44,8 +42,6 @@ const Buttons =(props) => {
     </div>
     )
 }
-
-
 
 const App = () => {
   const [good, setGood] = useState(0)
